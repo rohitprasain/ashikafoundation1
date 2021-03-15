@@ -222,6 +222,54 @@ input:focus {
   outline: none;
 }
 
+.socials{
+  margin-top: 2rem;
+  min-height: 15rem;
+
+
+  
+  /* border: 2px solid red; */
+
+  /* position: relative; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.socialcontainer{
+  /* border: 2px solid green; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  min-height: 100%;
+
+}
+.socials p{
+
+  color: #DAAD86;
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 2rem;
+
+}
+
+.socialcontainer {
+display: flex;
+  flex-direction: row;
+}
+
+.socialcontainer .fbimg {
+  top: 1rem;
+}
+.socialcontainer .instaimg {
+  top: 9rem;
+}
+.socialcontainer .twitterimg {
+  top: 9rem;
+
+  left: 20%;
+}
 
 @media (min-width: 700px) {
   * {
