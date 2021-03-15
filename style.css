@@ -7,7 +7,7 @@ font-family: 'Titillium Web', sans-serif;
 font-family: 'Yellowtail', cursive; */
 * {
   margin: 0;
-  padding: 2px;
+  padding: 0px;
   box-sizing: border-box;
 }
 a {
@@ -18,22 +18,31 @@ a {
 li {
   list-style: none;
 }
+.helpingcloth,.volunteer,.contact {
+  /* border: 2px solid red; */
+  margin:4rem 0;
+}
+
 
 .logo_div {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 1rem 0;
 }
 .logo_div img {
   height: 90px;
-  width: 80px;
+  width:90px;
 }
 .main_intro {
+  /* border: 2px solid red; */
+
   position: relative;
+
 }
 .main_intro img {
   max-width: 100%;
-  min-width: 100%;
+  /* min-height: 100%; */
   /* display:block; */
   height: 500px;
 }
@@ -59,6 +68,7 @@ li {
 .introduction {
   position: absolute;
   top: 10rem;
+  left: 1rem;
 
   color: #bc986a;
   z-index: 1;
@@ -80,11 +90,15 @@ li {
 }
 
 .helped {
+  /* border: 2px solid red; */
+
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
 
   background-color: #659dbd;
+
+  border-radius: 0 0rem 1rem 1rem;
 }
 .help {
   font-size: 2rem;
@@ -103,7 +117,10 @@ li {
 .helpingcloth img {
   max-width: 100%;
   min-width: 100%;
-  height: 400px;
+  height: 300px;
+  width: 300px;
+
+  border-radius: 1rem;
 }
 .helpingcloth p {
   text-align: center;
@@ -115,7 +132,7 @@ li {
 }
 
 .volunteer .volname {
-  margin: 5rem 0 2rem 0;
+  /* margin: 5rem 0 2rem 0; */
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
@@ -144,7 +161,7 @@ li {
   position: absolute;
 
   top: 6rem;
-  right: 0rem;
+  right: .6rem;
 }
 .volcard .instaimg {
   position: absolute;
@@ -173,7 +190,6 @@ li {
   margin-top: 5rem;
 }
 
-
 .contactus p {
   font-family: Roboto;
   color: #bc986a;
@@ -195,7 +211,7 @@ li {
   background: none;
 }
 
-.contactinput{
+.contactinput {
   display: flex;
   /* flex-wrap: wrap; */
   flex-direction: column;
@@ -203,7 +219,6 @@ li {
 }
 
 input {
-
   margin: 1.5rem 0rem;
 
   text-decoration: none;
@@ -222,73 +237,143 @@ input:focus {
   outline: none;
 }
 
-.socials{
-  margin-top: 2rem;
-  min-height: 15rem;
+.socials {
+  /* margin-top: 2rem; */
+  /* min-height: 15rem; */
 
-
-  
-  /* border: 2px solid red; */
-
-  /* position: relative; */
   display: flex;
   justify-content: center;
   align-items: center;
 
+  /* border: 2px solid red; */
 }
-.socialcontainer{
+.socialcontainer {
   /* border: 2px solid green; */
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
 
-  min-height: 100%;
-
+  position: relative;
+  /* border: 2px solid red; */
+  min-height: 14rem;
 }
-.socials p{
-
-  color: #DAAD86;
+.socials p {
+  color: #daad86;
   font-family: Roboto;
   font-weight: bold;
   font-size: 2rem;
-
 }
 
-.socialcontainer {
-display: flex;
-  flex-direction: row;
-}
+.socialcontainer .fb {
+  position: absolute;
 
-.socialcontainer .fbimg {
   top: 1rem;
+  right: 5rem;
 }
-.socialcontainer .instaimg {
-  top: 9rem;
+.instadiv {
+  margin-right: 1rem;
 }
-.socialcontainer .twitterimg {
-  top: 9rem;
+.twitterdiv {
+  margin-left: 1rem;
+}
 
-  left: 20%;
+.donatebutton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  min-height: 10rem;
+}
+button:focus {
+  outline: none;
+}
+.donatebutton button {
+  color: #bc986a;
+  font-size: 2rem;
+
+  border: 2px solid #bc986a;
+  background: none;
+
+  padding: 1rem;
+  border-radius: 1rem;
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
 }
 
+
+
+.footercontainer{
+  /* min-height: 20rem; */
+  background-color: rgb(61, 45, 21);
+}
+.footercontainer,
+.mainfooter,
+.footercontact {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.footercontainer img {
+  height: 100px;
+  width: 100px;
+}
+.footercontainer{
+  padding-top: 1.5rem;
+}
+.footer p{
+  color: whitesmoke;
+  font-family: Roboto;
+  font-weight: bold;
+}
+.footercontact p{
+  margin-top: .5rem;
+
+}
+.contactp p {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 2rem;
+  color: #bc986a;
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.copyright{
+  /* border-top: 1px solid whitesmoke; */
+  padding: 1rem 0;
+}
+.copyright p{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: .8rem;
+  color: whitesmoke;
+}
 @media (min-width: 700px) {
   * {
-    padding: 2px 8px;
+    /* padding: 2px 8px; */
   }
   .firstdiv {
     min-height: 100vh;
 
     /* border: 2px solid red; */
   }
+  .helpingcloth,.volunteer,.contact{
+    margin:6rem 0;
+  }
   .logo_div img {
     height: 100px;
     width: 100px;
   }
   .main_intro {
-    min-height: 80vh;
+    min-height: 70vh;
   }
   .main_intro img {
-    height: 700px;
+    height: 100vh;
+    width:100%;
   }
   .introduction {
     top: 12rem;
@@ -311,7 +396,9 @@ display: flex;
 
     border-radius: 0 0 2rem 2rem;
   }
-
+  .help {
+    font-size: 3.5rem;
+  }
   .helpingcloth {
     display: flex;
     flex-direction: row;
@@ -327,7 +414,7 @@ display: flex;
   }
 
   .volcard {
-   min-width: 19rem;
+    min-width: 19rem;
   }
   .volunteer .volname {
     font-size: 5rem;
@@ -335,23 +422,22 @@ display: flex;
   .contactus p {
     text-align: left;
     font-size: 3.5rem;
+    padding-left: 2rem;
   }
-.contactinput{
-  display: flex;
-}
+  .contactinput {
+    display: flex;
+  }
   input {
     font-size: 1.5rem;
     padding: 1.5rem;
     height: 4rem;
   }
-  .contactinput{
-    
+  .contactinput {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
   }
-
 
   .contactinput img {
     height: 70px;
@@ -359,11 +445,63 @@ display: flex;
     cursor: pointer;
     /* margin-left: 30vw; */
   }
+
+  .socialcontainer {
+    min-height: 16rem;
+  }
+  .socials p {
+    color: #daad86;
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 4rem;
+  }
+
+  .socialcontainer .fb {
+    position: absolute;
+
+    top: 1rem;
+    right: 9rem;
+  }
+  .instadiv {
+    margin-right: 1.5rem;
+  }
+  .twitterdiv {
+    margin-left: 1.5rem;
+  }
+
+  .donatebutton button {
+    font-size: 3rem;
+  }
+  .donatebutton button:hover {
+    font-size: 3.5rem;
+  }
+
+  .footercontainer img {
+    height: 150px;
+    width: 150px;
+  }
+  .footercontainer {
+    display: block;
+
+    text-align: center;
+  }
+  .mainfooter {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .contactp p {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 3rem;
+    color: #bc986a;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  }
 }
 
-@media (max-width:900px){
-  .contactinput{
-    
+@media (max-width: 900px) {
+  .contactinput {
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-around;
