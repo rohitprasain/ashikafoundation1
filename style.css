@@ -1,0 +1,324 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Roboto:wght@300&family=Titillium+Web:wght@200&family=Yellowtail&display=swap");
+/* fonts */
+
+/* font-family: 'Merriweather', serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Titillium Web', sans-serif;
+font-family: 'Yellowtail', cursive; */
+* {
+  margin: 0;
+  padding: 2px;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+li {
+  list-style: none;
+}
+
+.logo_div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo_div img {
+  height: 90px;
+  width: 80px;
+}
+.main_intro {
+  position: relative;
+}
+.main_intro img {
+  max-width: 100%;
+  min-width: 100%;
+  /* display:block; */
+  height: 500px;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+      94.77deg,
+      #ffffff 0.92%,
+      #ffffff 8.94%,
+      rgba(255, 255, 255, 0) 97.09%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.92) 0%,
+      rgba(255, 255, 255, 0) 100%
+    );
+
+  position: absolute;
+}
+
+.introduction {
+  position: absolute;
+  top: 10rem;
+
+  color: #bc986a;
+  z-index: 1;
+}
+
+.introduction .ashika {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+}
+.introduction .foundation {
+  font-size: 2rem;
+}
+.introduction .slogan {
+  font-size: 1rem;
+}
+
+.foundation_intro p {
+  font-family: "Yellowtail", cursive;
+}
+
+.helped {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  background-color: #659dbd;
+}
+.help {
+  font-size: 2rem;
+  font-family: "Titillium Web", sans-serif;
+  font-weight: bold;
+  color: white;
+}
+
+.helpingcloth {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.helpingcloth img {
+  max-width: 100%;
+  min-width: 100%;
+  height: 400px;
+}
+.helpingcloth p {
+  text-align: center;
+
+  font-family: Titillium Web;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #8d8741;
+}
+
+.volunteer .volname {
+  margin: 5rem 0 2rem 0;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 3.5rem;
+
+  color: #bc986a;
+
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.volunteer_card {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.volcard {
+  margin: 2rem 0;
+  /* border: 2px solid red; */
+  min-width: 18rem;
+
+  position: relative;
+}
+.volcard .fbimg {
+  position: absolute;
+
+  top: 6rem;
+  right: 0rem;
+}
+.volcard .instaimg {
+  position: absolute;
+
+  top: 11rem;
+  right: 2rem;
+}
+.volcard .twitterimg {
+  position: absolute;
+
+  top: 14rem;
+  right: 6rem;
+}
+.volunteer p {
+  text-align: center;
+}
+.volunteer img {
+  border-radius: 70%;
+}
+.volcard p {
+  font-family: Titillium Web;
+  color: #8d8741;
+  /* font-weight: bold; */
+  font-size: 1.5rem;
+
+  margin-top: 5rem;
+}
+
+
+.contactus p {
+  font-family: Roboto;
+  color: #bc986a;
+  text-align: center;
+  font-weight: bold;
+  font-size: 3rem;
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.contactinput img {
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  /* margin-left: 30vw; */
+}
+
+.contactinput button {
+  border: none;
+  background: none;
+}
+
+.contactinput{
+  display: flex;
+  /* flex-wrap: wrap; */
+  flex-direction: column;
+  align-items: center;
+}
+
+input {
+
+  margin: 1.5rem 0rem;
+
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 1rem;
+
+  border-radius: 1rem;
+  height: 3rem;
+
+  border: 2px solid #bc986a;
+
+  color: #caae48;
+}
+
+input:focus {
+  outline: none;
+}
+
+
+@media (min-width: 700px) {
+  * {
+    padding: 2px 8px;
+  }
+  .firstdiv {
+    min-height: 100vh;
+
+    /* border: 2px solid red; */
+  }
+  .logo_div img {
+    height: 100px;
+    width: 100px;
+  }
+  .main_intro {
+    min-height: 80vh;
+  }
+  .main_intro img {
+    height: 700px;
+  }
+  .introduction {
+    top: 12rem;
+  }
+
+  .introduction .ashika {
+    font-size: 4.5rem;
+  }
+  .introduction .foundation {
+    font-size: 4rem;
+  }
+  .introduction .slogan {
+    font-size: 2rem;
+  }
+
+  .helped {
+    /* background-color: #098825d0; */
+    max-width: 90vw;
+    margin: auto;
+
+    border-radius: 0 0 2rem 2rem;
+  }
+
+  .helpingcloth {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .helpingcloth p {
+    font-size: 2.5rem;
+  }
+
+  .volunteer_card {
+    flex-direction: row;
+  }
+
+  .volcard {
+   min-width: 19rem;
+  }
+  .volunteer .volname {
+    font-size: 5rem;
+  }
+  .contactus p {
+    text-align: left;
+    font-size: 3.5rem;
+  }
+.contactinput{
+  display: flex;
+}
+  input {
+    font-size: 1.5rem;
+    padding: 1.5rem;
+    height: 4rem;
+  }
+  .contactinput{
+    
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+
+  .contactinput img {
+    height: 70px;
+    width: 80px;
+    cursor: pointer;
+    /* margin-left: 30vw; */
+  }
+}
+
+@media (max-width:900px){
+  .contactinput{
+    
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
