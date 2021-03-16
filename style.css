@@ -157,6 +157,24 @@ li {
 
   position: relative;
 }
+.fbhover1 path {
+  fill: rgb(0, 110, 255);
+  transform: scale(.8);
+  /* width: ; */
+  /* color: blue; */
+}
+.instahover1 path {
+  fill: rgb(187, 47, 152);
+  transform: scale(.8);
+
+  /* color: blue; */
+}
+.twitterhover1 path {
+  fill: rgb(86, 154, 243);
+  transform: scale(.8);
+
+  /* color: blue; */
+}
 .volcard .fbimg {
   position: absolute;
 
@@ -173,7 +191,7 @@ li {
   position: absolute;
 
   top: 13rem;
-  right: 6rem;
+  right: 5.5rem;
 }
 .volunteer p {
   text-align: center;
@@ -272,18 +290,7 @@ input:focus {
   right: 8rem;
 }
 
-.fbhover1 path {
-  fill: rgb(0, 110, 255);
-  /* color: blue; */
-}
-.instahover1 path {
-  fill: rgb(187, 47, 152);
-  /* color: blue; */
-}
-.twitterhover1 path {
-  fill: rgb(86, 154, 243);
-  /* color: blue; */
-}
+
 .instadiv {
   margin-right: 2rem;
 }
@@ -484,6 +491,18 @@ button:focus {
     right: 10rem;
   }
 
+  .fbhover1 path {
+    fill: rgb(0, 110, 255);
+    transform: scale(1);
+  }
+  .instahover1 path {
+    fill: rgb(187, 47, 152);
+    transform: scale(1);
+    }
+  .twitterhover1 path {
+    transform: scale(1);
+    }
+
   .fbhover1 path{
     fill:#DAAD86;
   }
@@ -503,6 +522,7 @@ button:focus {
   }
   .twitterhover1:hover path {
     fill: rgb(86, 154, 243);
+   
     /* color: blue; */
   }
 
