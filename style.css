@@ -18,11 +18,12 @@ a {
 li {
   list-style: none;
 }
-.helpingcloth,.volunteer,.contact {
+.helpingcloth,
+.volunteer,
+.contact {
   /* border: 2px solid red; */
-  margin:4rem 0;
+  margin: 4rem 0;
 }
-
 
 .logo_div {
   display: flex;
@@ -32,13 +33,12 @@ li {
 }
 .logo_div img {
   height: 90px;
-  width:90px;
+  width: 90px;
 }
 .main_intro {
   /* border: 2px solid red; */
 
   position: relative;
-
 }
 .main_intro img {
   max-width: 100%;
@@ -160,19 +160,19 @@ li {
 .volcard .fbimg {
   position: absolute;
 
-  top: 6rem;
-  right: .6rem;
+  top: 3rem;
+  right: 1rem;
 }
 .volcard .instaimg {
   position: absolute;
 
-  top: 11rem;
+  top: 9rem;
   right: 2rem;
 }
 .volcard .twitterimg {
   position: absolute;
 
-  top: 14rem;
+  top: 13rem;
   right: 6rem;
 }
 .volunteer p {
@@ -262,20 +262,33 @@ input:focus {
   color: #daad86;
   font-family: Roboto;
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
-.socialcontainer .fb {
+.fbdiv {
   position: absolute;
 
   top: 1rem;
-  right: 5rem;
+  right: 8rem;
+}
+
+.fbhover1 path {
+  fill: rgb(0, 110, 255);
+  /* color: blue; */
+}
+.instahover1 path {
+  fill: rgb(187, 47, 152);
+  /* color: blue; */
+}
+.twitterhover1 path {
+  fill: rgb(86, 154, 243);
+  /* color: blue; */
 }
 .instadiv {
-  margin-right: 1rem;
+  margin-right: 2rem;
 }
 .twitterdiv {
-  margin-left: 1rem;
+  margin-left: 2rem;
 }
 
 .donatebutton {
@@ -301,9 +314,7 @@ button:focus {
   cursor: pointer;
 }
 
-
-
-.footercontainer{
+.footercontainer {
   /* min-height: 20rem; */
   background-color: rgb(61, 45, 21);
 }
@@ -321,17 +332,16 @@ button:focus {
   height: 100px;
   width: 100px;
 }
-.footercontainer{
+.footercontainer {
   padding-top: 1.5rem;
 }
-.footer p{
+.footer p {
   color: whitesmoke;
   font-family: Roboto;
   font-weight: bold;
 }
-.footercontact p{
-  margin-top: .5rem;
-
+.footercontact p {
+  margin-top: 0.5rem;
 }
 .contactp p {
   font-family: Roboto;
@@ -341,17 +351,19 @@ button:focus {
   color: #bc986a;
   text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
 }
-.copyright{
+.copyright {
   /* border-top: 1px solid whitesmoke; */
   padding: 1rem 0;
 }
-.copyright p{
+.copyright p {
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
-  font-size: .8rem;
+  font-size: 0.8rem;
   color: whitesmoke;
 }
+
+
 @media (min-width: 700px) {
   * {
     /* padding: 2px 8px; */
@@ -361,8 +373,10 @@ button:focus {
 
     /* border: 2px solid red; */
   }
-  .helpingcloth,.volunteer,.contact{
-    margin:6rem 0;
+  .helpingcloth,
+  .volunteer,
+  .contact {
+    margin: 6rem 0;
   }
   .logo_div img {
     height: 100px;
@@ -373,7 +387,7 @@ button:focus {
   }
   .main_intro img {
     height: 100vh;
-    width:100%;
+    width: 100%;
   }
   .introduction {
     top: 12rem;
@@ -462,11 +476,41 @@ button:focus {
     top: 1rem;
     right: 9rem;
   }
+
+  .fbdiv {
+    position: absolute;
+
+    top: 1rem;
+    right: 10rem;
+  }
+
+  .fbhover1 path{
+    fill:#DAAD86;
+  }
+  .instahover1 path{
+    fill:#DAAD86;
+  }
+  .twitterhover1 path{
+    fill:#DAAD86;
+  }
+  .fbhover1:hover path {
+    fill: rgb(0, 110, 255);
+    /* color: blue; */
+  }
+  .instahover1:hover path {
+    fill: rgb(187, 47, 152);
+    /* color: blue; */
+  }
+  .twitterhover1:hover path {
+    fill: rgb(86, 154, 243);
+    /* color: blue; */
+  }
+
   .instadiv {
-    margin-right: 1.5rem;
+    margin-right: 3rem;
   }
   .twitterdiv {
-    margin-left: 1.5rem;
+    margin-left: 3rem;
   }
 
   .donatebutton button {
